@@ -9,7 +9,7 @@ docker run -d --name haproxy-datadog \
   -v $DIR/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro \
   -p 3834:3834 \
   -p 3835:3835 \
-  haproxy:1.5
+  haproxy:1.5-alpine
 # Check if the config file is valid
 # docker run -it --rm --name haproxy-syntax-check \
 #   haproxy-datadog haproxy -c -f /usr/local/etc/haproxy/haproxy.cfg
